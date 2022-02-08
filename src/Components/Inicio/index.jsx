@@ -1,9 +1,19 @@
+import  { Header } from "../Header/Index"
+ import { BestProductsList } from "../BestSeller/CardBestSeller"
+import {Footer} from "../Footer/footer"
+import {Icategories} from "../Categorias/InicioCategories"
+import {Info} from "../Info/Info"
 
-function Inicio () {
+
+export function Inicio () {
     return (
         <>
-        <h1>Inico</h1>
+     <Header/>
+     <BestProductsList/>
+     <Icategories/>
+     <Info/>
+     <Footer/>
+    
         </>
     )
 }
-export {Inicio}

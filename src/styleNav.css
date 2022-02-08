@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    width: 7em;
+}
+
+.Inicio {
+    font-size: 2em;
+    margin: 0.5em;
+
+}
+.Cart {
+    font-size: 3em;
+
+}
+a{
+    color: black;
+  }

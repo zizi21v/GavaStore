@@ -1,46 +1,52 @@
 import "./App.css";
-import { NavBar } from "./Components/Navbar/NavbarElements";
-import {FaInstagram}  from "react-icons/fa";
-import {FaTruck}  from "react-icons/fa";
-import {FaCreditCard}  from "react-icons/fa";
-import {FaWhatsapp}  from "react-icons/fa";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { ProductsList } from "../src/Components/Categorias/CardBox";
+import { HiOutlineShoppingCart } from "react-icons/hi"
+import './styleNav.css'
+import { Inicio } from "../src/Components/Inicio/index"
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <header>
-     <NavBar/>
-         <div className="App-header">
-          <h1>IF YOU LIKE IT</h1>
-        </div>
-        <div className="App-header">
-          <h1>WEAR IT</h1>
-        </div>
-      </header> 
-      <div>
-        Productos
-        </div>  
-       <div>
-         <div> <FaTruck/> ENVIAMOS TU COMPRA <br/> Hacemos envios a nivel nacional </div>
-         <div><FaCreditCard/>PAGA COMO QUIERAS <br/> Tenemos diferentes opciones </div>
-         </div>
-         <footer>
-        <div>
-          <p>Encuentranos en:</p>
-         <a href="https://www.instagram.com/_Gava.store/"><FaInstagram/></a>
-         <a href="https://api.whatsapp.com/send/?phone=584143057366&text=Hola%21+Estoy+interesad%40+en+&app_absent=0"><FaWhatsapp/></a>
-         </div>
-         <div>
-          <p>Metodos de pago:</p>
-          
-
-         </div>
+    <BrowserRouter>
+      <nav >
+        <div className="navbar">
+          <div className="Inicio">
+            <Link to= "/Inicio">Inicio</Link></div>
+            <div className="Inicio">
+            <Link to="/Accesories"> Accesorios </Link>
+          </div>
+          <img
+            className="Logo"
+            src="https://drive.google.com/uc?export=download&id=142Of3W-8wgzE47IpPizjRmqwos-GV32J"
+            alt="Logo"
+          /> 
+          <div className="Inicio"> <Link to="/Tops">Tops</Link></div>
+          <div className="Inicio"> <Link to="/Tshirt">T-Shirts</Link> </div>
          
-         </footer>
+          <HiOutlineShoppingCart className="Cart" />
+        </div>
+        
+</nav>
+      
 
-       </div>
+      <Routes>
+      
+    <Route path="/Inicio" element={<Inicio/>}></Route>
+    <Route path="/Tops" element={<ProductsList />}></Route>
+    <Route path="/Tshirt" element={<ProductsList />}></Route>
+    <Route path="/Accesories" element={<ProductsList />}></Route>
+  
+
+  
+  </Routes>
+     
+    </BrowserRouter>
+   
+  </div>
   );
 }
 

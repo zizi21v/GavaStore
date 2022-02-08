@@ -1,0 +1,17 @@
+.Footer-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+.Footer-Contact {
+    display: flex;
+    align-items: center;
+}
+
+.Footer-reserve {
+  width: 15%;
+  border-radius: 58%;
+}
+.Footer-Icons {
+    font-size: 4em;
+}

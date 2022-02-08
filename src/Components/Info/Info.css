@@ -1,0 +1,23 @@
+.Info {
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    
+}
+
+Info-text {
+    padding: 1em;
+}
+.Info-Icons{
+   font-size: 3em;
+}
+.Info-Container {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+   
