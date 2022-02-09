@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 
+
 import "./Categories.css";
 
 export function Icategories() {
@@ -20,6 +21,7 @@ export function Icategories() {
             <div className="Self-Categories">
               <img src="https://drive.google.com/uc?export=download&id=1nj66QhJ6vYWvwK2kJuSRm_FmdlpsDVj-"></img>
               <Link to="/Accesories">Accesorios</Link>
+            
              
              </div>
        

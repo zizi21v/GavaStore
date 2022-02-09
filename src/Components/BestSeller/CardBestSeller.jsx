@@ -10,9 +10,7 @@ export const BestProductsList = () => {
       {BestSeller.map((BestSeller) => (
                           <Cards
                           key={BestSeller.id}
-                          name={BestSeller.name}
-                          image={BestSeller.image}
-                          price={BestSeller.price}
+                          data={BestSeller}
                           />
       ))}
     </div>

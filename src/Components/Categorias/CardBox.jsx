@@ -9,15 +9,14 @@ export const ProductsList = () => {
 
   return (
   <div className='containerCards'>
-    {products.productos.map((productos) => (
+    {products.productos.map((productos, addToCart) => (
                         <Cards
                         key={productos.id}
-                        name={productos.name}
-                        image={productos.img}
-                        price={productos.price}
+                        data= {productos}
+                        addToCart= {addToCart}
+                      
                         />
     ))}
-
   </div>
   )
 };

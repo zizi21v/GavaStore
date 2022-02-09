@@ -2,7 +2,7 @@ export const BestSeller = [
     {
         id: 1,
         name: "T-Shirt Oversized Hell",
-       image : "https://drive.google.com/uc?export=download&id=1RgoYyGeW6ytpUNov6rJR09lG9EyB9RQ_",
+       image: "https://drive.google.com/uc?export=download&id=1RgoYyGeW6ytpUNov6rJR09lG9EyB9RQ_",
         price: "$15",
         url : "",
         size: "Unica",

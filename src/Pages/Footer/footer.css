@@ -1,0 +1,38 @@
+.Footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 14em;
+}
+.Footer-Contact {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Footer-inicio{
+    margin: 1em;
+    
+    FONT-SIZE: 2EM;
+}
+.Footer-reserve {
+  width: 8%;
+  border-radius: 58%;
+}
+.Footer-Icons {
+  font-size: 3em;
+}
+.Footer-Text{
+    margin: 1em;
+    font-size: 1.5em;
+}
+.Footer-Bolivares {
+    font-size: 4em;
+    margin: 0;
+}
+.Footer-links{
+    padding-left: 1em;
+}

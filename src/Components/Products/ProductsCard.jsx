@@ -1,8 +1,5 @@
-
-
-export function Cards (props, {addToCart} ) {
-    const {data} = props
-    let {id,image,name,price}  = data
+export function ProductsCards (props) {
+    const {image, name, price,size,care,material}  = props
     return (
         <div className="productCard">
             <div className="productImage">
@@ -11,8 +8,12 @@ export function Cards (props, {addToCart} ) {
         <div className="productInfo">
             <h1 className="Namecard">{name}</h1>
             <p className="Pricecard">{price}</p>
+            <p className="Pricecard">{'Talla'+ size}</p>
+            <p className="Pricecard">{'Cuidados'+ care}</p>
+            <p className="Pricecard">{'Material'+ material}</p>
+
+            
         </div>
-        <button onClick={()=> addToCart(id)}>Agregar a el Carrito</button>
         </div>
     )
 }  

@@ -1,8 +1,9 @@
 import  { Header } from "../Header/Index"
- import { BestProductsList } from "../BestSeller/CardBestSeller"
+ import { BestProductsList } from "../../Components/BestSeller/CardBestSeller"
 import {Footer} from "../Footer/footer"
-import {Icategories} from "../Categorias/InicioCategories"
+import {Icategories} from "../../Components/Categorias/RouterCategories"
 import {Info} from "../Info/Info"
+
 
 
 export function Inicio () {
@@ -13,7 +14,6 @@ export function Inicio () {
      <Icategories/>
      <Info/>
      <Footer/>
-    
-        </>
+     </>
     )
 }
