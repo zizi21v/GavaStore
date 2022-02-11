@@ -1,6 +1,6 @@
 .containerCards {
   
-   display: flex;
+display: flex;
 flex-direction: row;
 align-content: center;
 justify-content: center;
@@ -9,6 +9,9 @@ flex-wrap: wrap; }
 .productCard {
     margin: 1.5em;
     background-color: #E8DCCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .Namecard {
     display: flex;
@@ -17,9 +20,11 @@ flex-wrap: wrap; }
 }
 
 .Pricecard {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
-    margin-left: 8%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .productImage {

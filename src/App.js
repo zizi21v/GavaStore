@@ -1,43 +1,42 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { ProductsList } from "../src/Components/Categorias/CardBox";
-import { HiOutlineShoppingCart } from "react-icons/hi";
-import "./styleNav.css";
+import { useReducer } from "react";
+import { CartContext } from "./Components/Context/CartContext";
+import { Nav } from "./Pages/Nav/Nav";
+import {ShoppingInitialState,
+  ShoppingReducer,
+} from "./Components/Cart/ShoppingReducers";
+import { HashRouter,Route, Routes} from "react-router-dom"
 import { Inicio } from "./Pages/Inicio/index";
-import { Pagecategories } from "../src/Components/Categorias/CategoriePage";
-import {ShoppingCart} from "../src/Components/Cart/ShoppingCart"
+import { Pagecategories } from "./Components/Categorias/CategoriePage";
+import { ShoppingCart } from "./Components/Cart/ShoppingCart"
+import { ProductsList } from "./Components/Categorias/CardBox";
+import { Products } from "./Components/Products/Products";
 
-
-function App() {
+ const App = () => {
+    const [state, dispatch] = useReducer(ShoppingReducer, ShoppingInitialState);
   return (
     <div className="App">
-      <BrowserRouter>
-        <nav>
-          <div className="navbar">
-            <div className="Inicio">
-              <Link to="/Inicio">Inicio</Link>
-            </div>
-            <img
-              className="Logo"
-              src="https://drive.google.com/uc?export=download&id=142Of3W-8wgzE47IpPizjRmqwos-GV32J"
-              alt="Logo"/>
-            <div className="Inicio">
-                <Link to="/Pagecategories">Categorias</Link>
-            </div>
-            <Link to="/ShoppingCart"><HiOutlineShoppingCart className="Cart" /></Link> 
-          </div>
-        </nav>
-
+      <HashRouter>
+        
+        
+        <CartContext.Provider value={[ state, dispatch ]}>
         <Routes>
-          <Route path="/*" element={<Inicio />}></Route>
-          <Route path="/Inicio" element={<Inicio />}></Route>
-          <Route path="/Tops" element={<ProductsList />}></Route>
-          <Route path="/Tshirt" element={<ProductsList />}></Route>
-          <Route path="/Accesories" element={<ProductsList />}></Route>
-          <Route path="/Pagecategories" element={<Pagecategories />}></Route>
-          <Route path="/ShoppingCart" element= {<ShoppingCart/>}></Route>
+            <Route path="/" element={<Nav/>}>
+            <Route path="/" element= {<Inicio/>}/>
+            <Route path="/Inicio" element= {<Inicio/>}/>
+            <Route path="/Tops" element= {<ProductsList />} />
+            <Route path="/Tshirt" element= { <ProductsList />} />
+            <Route path="/Accesories" element= { <ProductsList />}/>
+            <Route path="/Pagecategories" element= {<Pagecategories />}/>
+            <Route path="/ShoppingCart" element= {<ShoppingCart />}/>
+            <Route path="/product/:id" element= {<Products/>}/>
+            </Route>
+
+
+
         </Routes>
-      </BrowserRouter>
+        </CartContext.Provider>
+      </HashRouter>
      
    
      
@@ -46,3 +45,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,0 +1,93 @@
+.Product-Container{
+    background-color: #E8DCCC;
+    display: flex;
+    width: 100%;
+    margin: 30px;
+    
+    border-radius: 4em;
+}
+
+
+
+.ProductCard{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+}
+.ProductInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.ProductImage {
+    width: 25em;
+    margin: 2em;
+    border-radius: 2em;
+}
+
+.Titulos {
+    font-size: 2em;
+
+    margin: 15px;
+}
+.Transparent{
+   color: #E8DCCC;
+}
+
+.ButtonP {
+    min-width: 130px;
+    height: 40px;
+    color: #000;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    box-shadow: 0 5px #000;
+    width: auto;
+  }
+  .ButtonP:hover {
+    box-shadow: 0 3px #000;
+    top: 1px;
+  }
+  .ButtonP:active {
+    box-shadow: 0 0 #000;
+    top: 5px;
+  }
+  
+  @media (max-width: 700px) {
+    .Product-Container{
+       
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+@media (max-width: 500px) {
+
+    .ButtonP{
+        width: auto;
+        margin-bottom: 1em;
+    }
+    
+    .ProductImage {
+        width: 19em;
+        margin: 2em;
+        border-radius: 2em;
+    }
+    .ProductInfo {
+        align-items: center;
+    }
+    
+}

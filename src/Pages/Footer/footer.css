@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 14em;
+ justify-content: center;
+ flex-wrap: wrap;
+ background-color: whitesmoke;
 }
 .Footer-Contact {
   display: flex;
   align-items: center;
-  margin: 1em;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
@@ -15,11 +16,12 @@
 
 .Footer-inicio{
     margin: 1em;
-    
+    display: flex;
+  
     FONT-SIZE: 2EM;
 }
 .Footer-reserve {
-  width: 8%;
+  width: 5%;
   border-radius: 58%;
 }
 .Footer-Icons {
@@ -35,4 +37,27 @@
 }
 .Footer-links{
     padding-left: 1em;
+    display: flex;
+}
+@media (max-width: 500px) {
+
+  .Footer-Text {
+    font-size: 1em;
+}
+.Footer-Bolivares {
+  font-size: 9vw;
+  margin: 0;
+}
+.Footer-Icons {
+  font-size: 2em;
+}
+.Footer-reserve {
+  width: 9%;
+  border-radius: 58%;
+}
+.Footer-links {
+  padding-left: 1em;
+  display: flex;
+  font-size: 85%;
+}
 }

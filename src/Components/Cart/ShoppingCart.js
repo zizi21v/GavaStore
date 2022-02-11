@@ -1,44 +1,31 @@
-import { Fragment, useReducer } from "react";
-import { Cardsincard} from "../Categorias/CardCategories";
-import { CartItem } from "./CartItem";
-import { TYPES } from "./ShoppingActions";
-import { ShoppingInitialState, ShoppingReducer } from "./ShoppingReducers";
+
+import {  useContext } from "react";
+import { ShoppingCard } from "./Shoppingcard";
+import {CartContext} from "../Context/CartContext";
+import './Cart.css'
 
 export const ShoppingCart = () => {
-  const [state, dispatch] = useReducer(ShoppingReducer, ShoppingInitialState);
-  const { products, cart } = state;
+  const [state] = useContext(CartContext);
+  
 
-  const addToCart = (id) => {
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-  };
-
-  const delfromcart = () => {};
-  const clearcart = () => {};
+  
   return (
-    <div>
+    <div className="ShoppingC-Container">
+      <div className="ShoppingC-Text">
       <h2>Carrito de compras</h2>
-
-      <article className="Box"></article>
-      {cart.map((product) => (
+       </div>
+      <article className="ShoppingItems"></article>
+      {state?.cart?.map((product) => (
         <div key={"div" + product.id}>
-    
-          <Cardsincard
+          <ShoppingCard
             key={product.id}
-            data={products.find((item) => item.id === product.id)}
+            data={state.products.find((item) => item.id === product.id)}
+            Quantity={product.Quantity}
           />
-          <button
-            key={"Boton" + product.id}
-            onClick={() => addToCart(product.id)}
-          >
-            +
-          </button>
         </div>
-        
       ))}
-      <h3>Carrito</h3>
-      <article className="Box">
-        {/* <button onClick={clearcart}>Limpiar Carrito</button> */}
-      </article>
+     <p className="Total">TOTAL:0</p>
     </div>
   );
 };
+

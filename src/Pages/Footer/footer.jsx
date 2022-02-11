@@ -15,8 +15,6 @@ export function Footer() {
         <a href="https://api.whatsapp.com/send/?phone=584143057366&text=Hola%21+Estoy+interesad%40+en+&app_absent=0">
           <FaWhatsapp className="Footer-Icons" />
         </a>
-      </div>
-      <div className="Footer-Contact">
         <p className="Footer-Text">Metodos de pago:</p>
         <p className="Footer-Bolivares">BS</p>
         <img

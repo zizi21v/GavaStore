@@ -10,7 +10,7 @@ export const BestSeller = [
         care: "Lavadora o Limpieza en seco",
       },
       {
-        id: 2,
+        id: 5,
         name: "Top Negro Estampado Rosas",
        image : "https://drive.google.com/uc?export=download&id=1IxFcPchD2JBK_fcb7A6vM5hBTQMfwQ3Q" /*`https://drive.google.com/uc?export=download&id=1czRgAVmB8OaHXwqsLn1lLzPyDTUGdFO9*/,
         price: "$5",
@@ -20,7 +20,7 @@ export const BestSeller = [
         care: "Lavadora o Limpieza en seco Profesional",
       },
       {
-      id: 3,
+      id: 8,
       name: "Lentes de Sol",
       image:"https://drive.google.com/uc?export=download&id=1nj66QhJ6vYWvwK2kJuSRm_FmdlpsDVj-",
       price: "$5",

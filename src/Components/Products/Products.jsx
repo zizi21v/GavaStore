@@ -1,26 +1,25 @@
-import React from 'react';
-import { Tops } from '../Categorias/Tops';
+import React, { useEffect, useState } from 'react';
 import { ProductsCards } from './ProductsCard';
+import { Allproducts } from '../Categorias/Data/Categories';
+import "./Products.css"
 
 export const Products = () => {
-  const url = window.location.href.split('/').reverse()[0]
-  const products = Tops[url]
+ 
+  const[url, seturl]= useState ("")
+  useEffect (()=> {seturl(window.location.href.split('/').reverse()[0])},[])
+  
   
 
   return (
-  <div className='containerCards'>
-    {products.productos.map((productos) => (
+
+  <div className='ProductCard'>
+    {Allproducts.map((product)=> product.id === parseInt(url) ? (
                         <ProductsCards 
-                        key={productos.id}
-                        name={productos.name}
-                        image={productos.img}
-                        price={productos.price}
-                        size={productos.size}
-                        care={productos.care}
-                        material= {productos.material}
+                        key={product.id}
+                        data={product}
 
                         />
-    ))}
+    ): null )}
 
   </div>
   )

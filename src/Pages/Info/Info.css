@@ -3,15 +3,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 2em;
+    flex-wrap: wrap;
     
 }
 
-Info-text {
-    padding: 1em;
+.Info-text {
+    margin: 1vw;
 }
 .Info-Icons{
-   font-size: 3em;
+   font-size: 2em;
 }
 .Info-Container {
     padding: 1em;
@@ -19,5 +20,6 @@ Info-text {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
    
