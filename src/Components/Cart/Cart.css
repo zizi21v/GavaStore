@@ -49,3 +49,26 @@
         justify-content: space-evenly;
         justify-content: flex-end;
      }
+     @media (max-width: 700px) {
+        .ShoppingCard, .ShoppingItems {
+            display: flex;
+            flex-direction: column;
+        }
+        .NameShopping {
+            display: flex;
+            font-size: 1em;
+            justify-content: center;
+        }
+
+        .ImageShopping {
+            margin: 1em;
+            width: 58%;
+        }
+    }
+    @media (max-width: 650px) {
+    .ShoppingC-Container {
+        background-color: #000;
+        border-radius: 20px;
+        margin: 1em;
+        width: 91%;
+    }}
