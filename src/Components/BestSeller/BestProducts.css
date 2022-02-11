@@ -7,7 +7,7 @@ justify-content: center;
 flex-wrap: wrap; }
 
 .productCard {
-    margin: 1.5em;
+    margin: 1.1em;
     background-color: #E8DCCC;
     display: flex;
     flex-direction: column;
@@ -29,4 +29,12 @@ flex-wrap: wrap; }
 
 .productImage {
     margin: 2em;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 1em;
 }

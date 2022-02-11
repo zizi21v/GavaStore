@@ -23,12 +23,13 @@ export function Cards (props) {
         <div className="productInfo">
             <h1 className="Namecard">{name}</h1>
             <p className="Pricecard">{'PRECIO:'+ price}</p>
-        </div>
+       
         <p className="Transparent">{Quantity === undefined ? num:Quantity}</p>
         <button className="ButtonP"  onClick={() => {
     addToCart(id)
     setNum(num + 1);
-  }} >Agregar a el Carrito</button>
+  }} >Agregar a el Carrito</button> 
+  </div>
         </div>
     )
 } 

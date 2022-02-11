@@ -14,7 +14,7 @@ export function ProductsCards (props) {
     return (
         <div className="Product-Container">
             <div >
-                <img className="ProductImage" src= {image} alt={'img'+name} />
+                <img className="ProductImg" src= {image} alt={'img'+name} />
                 </div>
         <div className="ProductInfo">
             <h1 className="Titulos">{name}</h1>
