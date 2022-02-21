@@ -7,7 +7,7 @@ export const  Accesories= {
             price: 5,
             url : "",
             size: "Unica",
-            material: "",
+            material: "Plastico",
             care: "Guardar en funda para evitar rayados",
           },
           {

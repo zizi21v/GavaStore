@@ -7,12 +7,12 @@ import {Info} from "../Info/Info"
 
 export function Inicio () {
     return (
-        <>
+        <div className="Init">
      <Header/>
      <BestProductsList/>
      <Icategories/>
      <Info/>
    
-     </>
+     </div>
     )
 }

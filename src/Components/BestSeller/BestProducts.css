@@ -41,6 +41,18 @@ flex-wrap: wrap; }
     flex-wrap: nowrap;
     margin-bottom: 1em;
 }
+
+.Buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (max-width:420px) {
+    .Namecard {
+        display: flex;
+        justify-content: center;
+        font-size: 1.7em;
+    }
     
 }

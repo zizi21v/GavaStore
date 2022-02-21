@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
 
 }
 
@@ -24,6 +23,7 @@ a{
     color: black;
     text-decoration: none;
   }
+
   @media (max-width: 500px) {
     .Inicio {
         font-size: 1.5em;

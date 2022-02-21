@@ -42,6 +42,7 @@
 }
 
 .ButtonP {
+    margin: 1em;
     min-width: 130px;
     height: 40px;
     color: #000;

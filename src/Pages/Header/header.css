@@ -14,6 +14,16 @@
     .App-header1{
         width: 100%;
     }
+    @media (max-width: 450px) {
+        .Header-Text {
+           
+            font-size: 6em;
+          
+        }
+    }
+        
+
+
     @media (max-width: 420px) {
         .Header-Text {
            
@@ -28,7 +38,7 @@
             height: 100%;
             justify-content: center;
             margin-top: g1em;
-            width: 107%;
+            width: 100%;
         }
     }
 
@@ -46,14 +56,14 @@
             height: 100%;
             justify-content: center;
             margin-top: 1em;
-            width: 111%;
+            width: 100%;
         }
     }
      
     @media  (max-width: 375px) {
 
         .App-header {
-            width: 113%;
+            width: 100%;
         }
         
     }

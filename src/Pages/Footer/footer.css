@@ -62,6 +62,8 @@
 }
 }
 
+
+
 @media (max-width: 420px){
   .Footer-container {
     background-color: #f5f5f5;
@@ -72,6 +74,6 @@
 @media (max-width: 400px) {
 .Footer-container {
     
-    width: 113%;
+    width: 100%;
 }
 }
