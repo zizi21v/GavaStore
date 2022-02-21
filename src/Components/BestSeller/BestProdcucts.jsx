@@ -33,7 +33,7 @@ export const BestSeller = [
       id: 9,
       name: "Collar Afroditas",
       image: "https://drive.google.com/uc?export=download&id=1ExYaV6xrmOXitw15SAuN4RwHPbT2Jg1T",
-      price: "$5",
+      price: 5,
       url : "",
       size: "Unica",
       material: "Acero Inoxidable",
