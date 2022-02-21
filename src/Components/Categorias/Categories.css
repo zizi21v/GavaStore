@@ -22,3 +22,10 @@
    justify-content: center;
 
 }
+
+@media (Max-width:500px) {
+   .Self-Image{
+    width: 61vw;
+}
+   } 
+

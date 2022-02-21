@@ -11,7 +11,7 @@ export function ShoppingCard (props) {
         <div className="ShoppingCard">
                <img  
               className="ImageShopping" src= {image}  alt={'img'+name} />
-              <h1 className="NameShopping" >{name} {price}</h1>
+              <h1 className="NameShopping" >{name} {'Precio:$' + price}</h1>
         </div>
     )
 } 

@@ -16,11 +16,11 @@ flex-wrap: wrap; }
 .Namecard {
     display: flex;
     justify-content: center;
-    font-size: 2.2em;
+    font-size: 2em;
 }
 
 .Pricecard {
-    font-size: 2.5em;
+    font-size: 2.1em;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -30,6 +30,9 @@ flex-wrap: wrap; }
 .productImage {
     margin: 2em;
 }
+.Image-product {
+    width: 100%;
+}
 
 .productInfo {
     display: flex;
@@ -37,4 +40,7 @@ flex-wrap: wrap; }
     align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 1em;
+}
+@media (max-width:420px) {
+    
 }

@@ -28,6 +28,23 @@ export function ShoppingReducer(state=ShoppingInitialState, action) {
       obj.cart.push({ id: action.payload, Quantity: 1 });
    
       return obj;
+      case TYPES.REMOVE_ONE_FROM_CART: {
+        const obj = {
+          ...state,
+          cart: state.cart.map((item) => {
+            return item.id === action.payload
+              ? { ...item, Quantity: item.Quantity - 1 }
+              : item;
+          }),
+        };
+        const cartObj = obj.cart.find((val) => val.id === action.payload);
+  
+        if (cartObj?.Quantity <= 0) {
+          obj.cart.splice(obj.cart.indexOf(cartObj), 1);
+        }
+        return obj;
+      }
+  
 
       default:
         return state;

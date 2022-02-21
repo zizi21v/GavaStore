@@ -18,11 +18,11 @@ export function Cards (props) {
     return (
         <div className="productCard">
             <div className="productImage">
-               <Link to={'/product/'+ id}>  <img src= {image}  alt={'img'+name} /> </Link>
+               <Link to={'/product/'+ id}>  <img className="Image-product" src= {image}  alt={'img'+name} /> </Link>
                 </div>
         <div className="productInfo">
             <h1 className="Namecard">{name}</h1>
-            <p className="Pricecard">{'PRECIO:'+ price}</p>
+            <p className="Pricecard">{'PRECIO:$'+ price}</p>
        
         <p className="Transparent">{Quantity === undefined ? num:Quantity}</p>
         <button className="ButtonP"  onClick={() => {
