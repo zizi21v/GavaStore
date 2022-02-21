@@ -121,7 +121,7 @@
         border-radius: 2em;
     }
     .ProductInfo {
-        align-items: center;
+        align-items: flex-start;
     }
     
 }
