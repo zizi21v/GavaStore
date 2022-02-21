@@ -64,7 +64,7 @@ export const ShoppingCart = () => {
        const whatsappUrl = `https://wa.me/584143057366?text=${text}`
        window.open(whatsappUrl, '_blank');
 
-     }} className="buttonBuy">Realizar pedido</button>
+     }} className="ButtonP">Realizar pedido</button>
    </div>
    
  </div>
